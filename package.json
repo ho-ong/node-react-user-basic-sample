@@ -1,0 +1,31 @@
+{
+  "name": "node-react-user-basic-sample-server",
+  "version": "1.0.0",
+  "description": "node version : 18.14.2",
+  "main": "index.js",
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+  },
+  "author": "hoong",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "4.0",
+    "mongoose": "^5.4.20"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22"
+  }
+}
