@@ -75,7 +75,7 @@ function JoinPage() {
 
         return (
           <div className="container--center">
-            <form className="form--center" onSubmit={handleSubmit}>
+            <form className="form--small" onSubmit={handleSubmit}>
               <h2>Join</h2>
 
               {/* Name */}
