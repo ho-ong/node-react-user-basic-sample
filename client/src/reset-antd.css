@@ -1,15 +1,5 @@
 @charset "utf-8";
 
-/* Common */
-:where(.css-dev-only-do-not-override-zjzpde) a {
-  color: inherit;
-  transition: inherit;
-}
-
-:where(.css-dev-only-do-not-override-zjzpde) a:hover {
-  color: #ffd700;
-}
-
 /* Form */
 .ant-form-item {
   margin-bottom: 10px;

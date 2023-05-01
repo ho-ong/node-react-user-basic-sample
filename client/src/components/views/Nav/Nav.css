@@ -44,13 +44,16 @@ nav a:hover {
   display: none !important;
 }
 
+.menu__side .ant-drawer-content-wrapper {
+  width: 360px;
+}
+
 .menu__side .ant-drawer-header {
   padding: 20px 30px;
   color: #333333;
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1.6;
   border-bottom: 1px solid #eeeeee;
-  font-size: 1.2em;
 }
 
 .menu__side .ant-drawer-title {

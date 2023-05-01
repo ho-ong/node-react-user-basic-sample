@@ -30,7 +30,13 @@ code {
 
 a,
 button {
+  color: inherit;
+  transition: inherit;
   cursor: pointer;
+}
+
+a:hover {
+  color: #ffd700;
 }
 
 button {
@@ -80,18 +86,19 @@ footer {
   align-items: center;
 }
 
-.form--center {
+/* Form */
+.form--small {
   width: 360px;
   display: flex;
   flex-direction: column;
 }
 
-.form--center h2 {
+.form--small h2 {
   margin-bottom: 20px;
   text-align: center;
 }
 
-.form--center button {
+.form--small button {
   margin-top: 20px;
 }
 

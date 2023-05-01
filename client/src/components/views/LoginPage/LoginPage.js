@@ -99,7 +99,7 @@ function LoginPage() {
 
         return (
           <div className="container--center">
-            <form className="form--center" onSubmit={handleSubmit}>
+            <form className="form--small" onSubmit={handleSubmit}>
               <h2>Login</h2>
 
               {/* Email */}
