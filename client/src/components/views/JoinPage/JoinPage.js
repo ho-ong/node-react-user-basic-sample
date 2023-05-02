@@ -28,13 +28,13 @@ function JoinPage() {
       }}
       // validation 확인 로직
       validationSchema={Yup.object().shape({
-        name: Yup.string().required("이름이 필요합니다."),
+        name: Yup.string().required("이름을 입력해주세요."),
         email: Yup.string()
           .email("이메일이 유효하지 않습니다.")
-          .required("이메일을 입력해주세요"),
+          .required("이메일을 입력해주세요."),
         password: Yup.string()
           .min(6, "비밀번호는 6자 이상이어야 합니다.")
-          .required("비밀번호를 입력해주세요"),
+          .required("비밀번호를 입력해주세요."),
         confirmPassword: Yup.string()
           .oneOf([Yup.ref("password"), null], "비밀번호가 일치하지 않습니다.")
           .required("비밀번호를 확인해주세요."),
