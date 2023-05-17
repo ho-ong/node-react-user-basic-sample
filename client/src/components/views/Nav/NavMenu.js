@@ -28,7 +28,7 @@ function NavMenu() {
   if (user.userData && !user.userData.isAuth) {
     // user가 로그인을 하지 않았을 경우
     return (
-      <ul className="menu__list">
+      <ul className="menu-list">
         <li>
           <a href="/">Home</a>
         </li>
@@ -43,7 +43,7 @@ function NavMenu() {
   } else {
     // user가 로그인을 했을 경우
     return (
-      <ul className="menu__list">
+      <ul className="menu-list">
         <li>
           <a href="/">Home</a>
         </li>

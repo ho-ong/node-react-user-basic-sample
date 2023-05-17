@@ -74,8 +74,8 @@ function JoinPage() {
         } = props;
 
         return (
-          <div className="container--center">
-            <form className="form--small" onSubmit={handleSubmit}>
+          <div className="container-center">
+            <form className="form-small" onSubmit={handleSubmit}>
               <h2>Join</h2>
 
               {/* Name */}
@@ -94,7 +94,7 @@ function JoinPage() {
                   }
                 />
                 {errors.name && touched.name && (
-                  <div className="input--error">{errors.name}</div>
+                  <div className="input-error">{errors.name}</div>
                 )}
               </Form.Item>
 
@@ -121,7 +121,7 @@ function JoinPage() {
                   }
                 />
                 {errors.email && touched.email && (
-                  <div className="input--error">{errors.email}</div>
+                  <div className="input-error">{errors.email}</div>
                 )}
               </Form.Item>
 
@@ -148,7 +148,7 @@ function JoinPage() {
                   }
                 />
                 {errors.password && touched.password && (
-                  <div className="input--error">{errors.password}</div>
+                  <div className="input-error">{errors.password}</div>
                 )}
               </Form.Item>
 
@@ -168,7 +168,7 @@ function JoinPage() {
                   }
                 />
                 {errors.confirmPassword && touched.confirmPassword && (
-                  <div className="input--error">{errors.confirmPassword}</div>
+                  <div className="input-error">{errors.confirmPassword}</div>
                 )}
               </Form.Item>
 
@@ -182,7 +182,7 @@ function JoinPage() {
               </button>
 
               {/* Login */}
-              <span className="form__link">
+              <span className="form-link">
                 Already have an account? <a href="/login">Login</a>
               </span>
             </form>

@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-// Deploy 환경
+// Local 환경
 module.exports = {
   mongoURI: process.env.MONGO_URI,
 };

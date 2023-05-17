@@ -21,23 +21,23 @@ function Nav() {
   return (
     <nav>
       {/* Logo */}
-      <div className="nav__logo">
+      <div className="nav-logo">
         <a href="/">LOGO</a>
       </div>
 
       {/* Menu */}
-      <div className="nav__menu">
+      <div className="nav-menu">
         <NavMenu />
       </div>
 
       {/* Menu - Mobile */}
-      <button className="menu__btn" onClick={showSideMenu}>
+      <button className="menu-btn" onClick={showSideMenu}>
         Menu
       </button>
       <Drawer
         title="Menu"
         placement="right"
-        className="menu__side"
+        className="menu-side"
         closable={false}
         onClose={closeSideMenu}
         open={visible}
