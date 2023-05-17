@@ -12,43 +12,43 @@ nav a:hover {
   color: #ffd700;
 }
 
-.nav__logo {
+.nav-logo {
   font-size: 1.2em;
   font-weight: bold;
   float: left;
 }
 
 /* Menu */
-.nav__menu {
+.nav-menu {
   margin-top: 2px;
   float: right;
 }
 
-.menu__list {
+.menu-list {
   display: inline-block !important;
 }
 
-.menu__list li {
+.menu-list li {
   float: left;
 }
 
-.menu__list li a {
+.menu-list li a {
   padding: 10px;
   margin: 10px;
 }
 
 /* Menu - Mobile */
-.menu__btn {
+.menu-btn {
   padding: 10px;
   float: right;
   display: none !important;
 }
 
-.menu__side .ant-drawer-content-wrapper {
+.menu-side .ant-drawer-content-wrapper {
   width: 360px;
 }
 
-.menu__side .ant-drawer-header {
+.menu-side .ant-drawer-header {
   padding: 20px 30px;
   color: #333333;
   font-size: 1.2em;
@@ -56,31 +56,31 @@ nav a:hover {
   border-bottom: 1px solid #eeeeee;
 }
 
-.menu__side .ant-drawer-title {
+.menu-side .ant-drawer-title {
   font-size: 1.2em;
 }
 
-.menu__side .menu__list li {
+.menu-side .menu-list li {
   width: 100%;
   padding: 20px 0;
   font-size: 1.2em;
 }
 
-.menu__side .menu__list li a {
+.menu-side .menu-list li a {
   padding: 0;
 }
 
 @media (max-width: 767px) {
-  .nav__logo {
+  .nav-logo {
     font-size: 1.4em;
   }
 
-  .menu__list {
+  .menu-list {
     display: none !important;
   }
 
-  .menu__btn,
-  .menu__side .menu__list {
+  .menu-btn,
+  .menu-side .menu-list {
     display: inline-block !important;
   }
 }

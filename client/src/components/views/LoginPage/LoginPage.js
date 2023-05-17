@@ -98,8 +98,8 @@ function LoginPage() {
         } = props;
 
         return (
-          <div className="container--center">
-            <form className="form--small" onSubmit={handleSubmit}>
+          <div className="container-center">
+            <form className="form-small" onSubmit={handleSubmit}>
               <h2>Login</h2>
 
               {/* Email */}
@@ -119,7 +119,7 @@ function LoginPage() {
                   }
                 />
                 {errors.email && touched.email && (
-                  <div className="input--error">{errors.email}</div>
+                  <div className="input-error">{errors.email}</div>
                 )}
               </Form.Item>
 
@@ -140,21 +140,14 @@ function LoginPage() {
                   }
                 />
                 {errors.password && touched.password && (
-                  <div className="input--error">{errors.password}</div>
+                  <div className="input-error">{errors.password}</div>
                 )}
               </Form.Item>
 
               {/* Error Message */}
               {formErrorMessage && (
                 <label>
-                  <p
-                    style={{
-                      padding: "10px 0",
-                      color: "red",
-                    }}
-                  >
-                    {formErrorMessage}
-                  </p>
+                  <p className="p-error">{formErrorMessage}</p>
                 </label>
               )}
 
@@ -179,7 +172,7 @@ function LoginPage() {
               </button>
 
               {/* Join */}
-              <span className="form__link">
+              <span className="form-link">
                 Don't have an account? <a href="/join">Join</a>
               </span>
             </form>
