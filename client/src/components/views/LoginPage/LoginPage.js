@@ -28,11 +28,11 @@ function LoginPage() {
 
   const [rememberMe, setRememberMe] = useState(rememberMeChecked);
 
-  const handleRememberMe = () => {
+  // rememberMeHandler
+  const rememberMeHandler = () => {
     setRememberMe(!rememberMe);
   };
 
-  // login
   return (
     <Formik
       // form에서 관리할 값들
@@ -44,10 +44,10 @@ function LoginPage() {
       validationSchema={Yup.object().shape({
         email: Yup.string()
           .email("이메일이 유효하지 않습니다.")
-          .required("이메일을 입력해주세요."),
+          .required("이메일을 입력해 주세요."),
         password: Yup.string()
           .min(6, "비밀번호는 6자 이상이어야 합니다.")
-          .required("비밀번호를 입력해주세요."),
+          .required("비밀번호를 입력해 주세요."),
       })}
       // submit 이벤트 발생 시 실행 로직
       onSubmit={(values, { setSubmitting }) => {
@@ -71,13 +71,13 @@ function LoginPage() {
                 navigate("/"); // "/" 페이지로 이동
               } else {
                 setFormErrorMessage(
-                  "이메일 또는 비밀번호를 다시 확인해주세요."
+                  "이메일 또는 비밀번호를 다시 확인해 주세요."
                 ); // error
               }
             })
             .catch((err) => {
               // 로그인 실패
-              setFormErrorMessage("이메일 또는 비밀번호를 다시 확인해주세요."); // error
+              setFormErrorMessage("이메일 또는 비밀번호를 다시 확인해 주세요."); // error
               setTimeout(() => {
                 setFormErrorMessage("");
               }, 3000);
@@ -155,8 +155,8 @@ function LoginPage() {
               <Form.Item>
                 <Checkbox
                   id="rememberMe"
-                  onChange={handleRememberMe}
                   checked={rememberMe}
+                  onChange={rememberMeHandler}
                 >
                   Remember me
                 </Checkbox>
