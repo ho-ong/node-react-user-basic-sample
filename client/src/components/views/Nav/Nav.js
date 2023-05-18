@@ -17,7 +17,6 @@ function Nav() {
     setVisible(false);
   };
 
-  // nav
   return (
     <nav>
       {/* Logo */}
