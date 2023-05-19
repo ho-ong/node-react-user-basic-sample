@@ -28,8 +28,8 @@ function LoginPage() {
 
   const [rememberMe, setRememberMe] = useState(rememberMeChecked);
 
-  // rememberMeHandler
-  const rememberMeHandler = () => {
+  // handleRememberMe
+  const handleRememberMe = () => {
     setRememberMe(!rememberMe);
   };
 
@@ -156,7 +156,7 @@ function LoginPage() {
                 <Checkbox
                   id="rememberMe"
                   checked={rememberMe}
-                  onChange={rememberMeHandler}
+                  onChange={handleRememberMe}
                 >
                   Remember me
                 </Checkbox>
