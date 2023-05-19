@@ -12,8 +12,8 @@ function NavMenu() {
   // state
   const user = useSelector((state) => state.user);
 
-  // logoutHandler
-  const logoutHandler = () => {
+  // handleLogout
+  const handleLogout = () => {
     axios.get(`${USER_SERVER}/logout`).then((res) => {
       // 로그아웃 성공
       if (res.data.success) {
@@ -47,7 +47,7 @@ function NavMenu() {
           <a href="/">Home</a>
         </li>
         <li>
-          <a onClick={logoutHandler}>Logout</a>
+          <a onClick={handleLogout}>Logout</a>
         </li>
       </ul>
     );
